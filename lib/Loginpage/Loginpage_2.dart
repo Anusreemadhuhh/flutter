@@ -101,7 +101,9 @@ class _Loginpage2_flutterState extends State<Loginpage2_flutter> {
                 color: Colors.purple.shade100,
                 borderRadius: BorderRadius.circular(10)),
           ),
-          SizedBox(height: 5,),
+          SizedBox(
+            height: 5,
+          ),
           Container(
             child: Row(
               children: [
@@ -130,9 +132,9 @@ class _Loginpage2_flutterState extends State<Loginpage2_flutter> {
           Container(
             child: Center(
               child: Text(
-                "Login",
+                "Sign Up",
                 style: TextStyle(
-                    fontSize: 30,
+                    fontSize: 20,
                     fontWeight: FontWeight.bold,
                     color: Colors.white),
               ),
@@ -143,6 +145,59 @@ class _Loginpage2_flutterState extends State<Loginpage2_flutter> {
                 color: Colors.purpleAccent,
                 borderRadius: BorderRadius.circular(30)),
           ),
+          SizedBox(
+            height: 7,
+          ),
+          Text(
+            "or",
+            style: TextStyle(
+                fontSize: 20,
+                fontWeight: FontWeight.normal,
+                color: Colors.black),
+          ),
+          SizedBox(height: 10,),
+          Container(
+            child: Center(
+              child: Text(
+                "Sign In with Google",
+                style: TextStyle(
+                    fontSize: 20,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.purple),
+              ),
+            ),
+            height: 50,
+            width: 300,
+            decoration: BoxDecoration(
+                color: Colors.white,
+                borderRadius: BorderRadius.circular(30),
+            border: Border.all(color: Colors.purple)),
+          ),
+          SizedBox(
+            height: 30,
+          ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Text(
+                "Already have an account?",
+                style: TextStyle(
+                    fontSize: 20,
+                    fontWeight: FontWeight.normal,
+                    color: Colors.black),
+              ),
+              SizedBox(
+                width: 5,
+              ),
+              Text(
+                "Login ",
+                style: TextStyle(
+                    fontSize: 20,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.purple),
+              )
+            ],
+          )
         ],
       ),
     );

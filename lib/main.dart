@@ -1,19 +1,20 @@
 import 'package:flutter/material.dart';
-import 'package:widgetsapk/textbutton.dart';
-import 'package:widgetsapk/textwidgets.dart';
-import 'package:widgetsapk/widgets.1.dart';
-import 'package:widgetsapk/Rowwidget.dart';
 import 'package:widgetsapk/First_ui.dart';
-
-
+import 'package:widgetsapk/Newui.dart';
 import 'Colurs_widgets.dart';
-import 'Loginpage_2.dart';
-import 'Rowwidget.dart';
+import 'Loginpage/Snapchatloginpage.dart';
+import 'Loginpage/Newui.dart';
+import 'Loginpage/Newui2.dart';
+import 'Loginpage/Newui3.dart';
+import 'Loginpage/Uiloginpage.dart';
+import 'Loginpage/Uiloginpage2.dart';
+import 'Navigation/First_page.dart';
+import 'Navigation/Second_page.dart';
 import 'Task.dart';
-import 'Loginpage.dart';
-import 'Uirow_columns.dart';
-import 'elevatedbutton.dart';
-import 'iconwidget.dart';
+import 'Works/Signup_Screen3.dart';
+import 'Works/Signup_screen.dart';
+import 'Works/Signup_screen2.dart';
+
 
 void main() {
   runApp(const MyApp());
@@ -26,6 +27,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
         // This is the theme of your application.
@@ -46,7 +48,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: Loginpage2_flutter(),
+      home: nav_1 (),
     );
   }
 }
