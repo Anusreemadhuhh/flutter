@@ -134,7 +134,7 @@ class _WhatsappState extends State<Whatsapp> {
                   title: Text("Name"),
                   subtitle: Text("Last Message"),
                   leading: CircleAvatar(
-                    backgroundImage: AssetImage("assets/user.png"),
+                    backgroundImage: AssetImage("assets/girl.jpg"),
                     radius: 30,
                   ),
                 );
