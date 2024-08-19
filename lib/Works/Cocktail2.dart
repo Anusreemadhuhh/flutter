@@ -40,7 +40,7 @@ class _cocktail2State extends State<cocktail2> {
                 ),
               ),
               Padding(
-                padding: const EdgeInsets.only(top: 350),
+                padding: const EdgeInsets.only(top: 400),
                 child: Container(
                   height: 350,
                   width: 430,
@@ -369,7 +369,7 @@ class _cocktail2State extends State<cocktail2> {
                             ),
                           ),
                           Padding(
-                            padding: const EdgeInsets.only(top: 10),
+                            padding: const EdgeInsets.only(top: 25),
                             child: Text(
                               "Total Drinks",
                               style:
