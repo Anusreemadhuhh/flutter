@@ -16,6 +16,7 @@ import '../Loginpage/Uiloginpage.dart';
 import '../Loginpage/Uiloginpage2.dart';
 import '../Navigation/First_page.dart';
 import '../Navigation/Second_page.dart';
+import '../Widgets/Tapbarwidget.dart';
 import '../Works/Carquick2.dart';
 import '../Works/Carquick3.dart';
 import '../Works/Carquick5.dart';
@@ -78,7 +79,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home:  CS_2_Home(),
+      home:  HomeScreen(),
     );
   }
 }
