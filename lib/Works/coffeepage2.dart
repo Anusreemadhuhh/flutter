@@ -183,10 +183,10 @@ class _CS_2_HomeState extends State<CS_2_Home> {
                           )),
                     ),
                     SizedBox(
-                      width: 9,
+                      width: 5,
                     ),
                     Container(
-                      width: 110,
+                      width: 80,
                       height: 45,
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(10),
@@ -344,7 +344,7 @@ class _CS_2_HomeState extends State<CS_2_Home> {
                                   ),
                                 ],
                               ),
-                              width: 180,
+                              width: 150,
                               height: 180,
                               decoration: BoxDecoration(
                                   borderRadius: BorderRadius.circular(10),

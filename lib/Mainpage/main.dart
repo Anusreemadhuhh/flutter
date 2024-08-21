@@ -3,7 +3,10 @@ import 'package:widgetsapk/Works/Carquick1.dart';
 import 'package:widgetsapk/Works/First_ui.dart';
 import 'package:widgetsapk/Works/Newui.dart';
 import '../Navigation/Botton_navigationwidget.dart';
+import '../Pickers/Imagepicker1.dart';
+import '../Pickers/datepicker1.dart';
 import '../Widgets/Colurs_widgets.dart';
+import '../Widgets/Dropdownbuttonwidget.dart';
 import '../Widgets/Expanded_widgets.dart';
 import '../Loginpage/Snapchatloginpage.dart';
 import '../Loginpage/Newui.dart';
@@ -30,6 +33,7 @@ import '../Works/Radiobuttonwork.dart';
 import '../Works/Whatsppuipage.dart';
 import '../Works/carnavigationbar.dart';
 import '../Works/carquicknavigationpage4.dart';
+import '../Widgets/checkboxwidget.dart';
 import '../Works/coffeepage3.dart';
 import '../Works/Coffeepage1.dart';
 import '../Works/Profiletask.dart';
@@ -74,7 +78,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home:  Carquick1(),
+      home:  CS_2_Home(),
     );
   }
 }

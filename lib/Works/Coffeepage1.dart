@@ -37,7 +37,7 @@ class _CS_1State extends State<CS_1> {
                 fontSize: 38, fontWeight: FontWeight.bold, color: Colors.white),
           ),
           SizedBox(
-            height: 15,
+            height: 5,
           ),
           Text(
             "The best grain, the finest roast, the\n               powerful flavor.",
@@ -45,9 +45,6 @@ class _CS_1State extends State<CS_1> {
                 fontSize: 15,
                 fontWeight: FontWeight.w400,
                 color: Colors.grey.shade600),
-          ),
-          SizedBox(
-            height: 15,
           ),
           InkWell(
             onTap: () {
