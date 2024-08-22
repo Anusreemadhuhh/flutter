@@ -20,6 +20,10 @@ import '../Widgets/Tapbarwidget.dart';
 import '../Works/Carquick2.dart';
 import '../Works/Carquick3.dart';
 import '../Works/Carquick5.dart';
+import '../Works/Fruitnavigation.dart';
+import '../Works/Minofoodfirstpage.dart';
+import '../Works/Minofoodpage2.dart';
+import '../Works/Minofoodpage3.dart';
 import '../Works/Task.dart';
 import '../Widgets/Floating action_widget.dart';
 import '../Widgets/Radiobuttonwidgets.dart';
@@ -79,7 +83,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home:  HomeScreen(),
+      home:  Fruit_navigation(),
     );
   }
 }

@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-import 'Fruitui1.dart';
+import 'Fruitnavigation.dart';
 
 class Banana extends StatefulWidget {
   const Banana({super.key});
@@ -29,36 +29,36 @@ class _BananaState extends State<Banana> {
               ),
               Padding(
                 padding: const EdgeInsets.only(left: 28, top: 53),
-                child: InkWell(
-                  onTap: () {
-                    Navigator.push(context, MaterialPageRoute(
-                      builder: (context) {
-                        return Fruitui1();
+                child: Row(
+                  children: [
+                    InkWell(
+                      onTap: () {
+                        Navigator.push(context, MaterialPageRoute(
+                          builder: (context) {
+                            return Fruit_navigation();
+                          },
+                        ));
                       },
-                    ));
-                  },
-                  child: Row(
-                    children: [
-                      Icon(
+                      child: Icon(
                         Icons.arrow_back_ios,
                         color: Colors.white,
                       ),
-                      SizedBox(width: 255,),
+                    ),
+                    SizedBox(width: 255,),
 
-                      Icon(
-                        Icons.add_shopping_cart,
-                        color: Colors.white,
-                      ),
-                      SizedBox(width: 30,),
+                    Icon(
+                      Icons.add_shopping_cart,
+                      color: Colors.white,
+                    ),
+                    SizedBox(width: 30,),
 
 
 
-                      Icon(
-                        CupertinoIcons.heart,
-                        color: Colors.white,
-                      ),
-                    ],
-                  ),
+                    Icon(
+                      CupertinoIcons.heart,
+                      color: Colors.white,
+                    ),
+                  ],
                 ),
               ),
               Padding(
@@ -417,7 +417,4 @@ class _BananaState extends State<Banana> {
       ),
     );
   }
-}
-
-class Fruitui3 {
 }
