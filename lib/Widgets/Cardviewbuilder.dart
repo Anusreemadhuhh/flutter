@@ -14,12 +14,16 @@ class _cardviewbuilderwidgetState extends State<cardviewbuilderwidget> {
       body: ListView.builder(
         itemBuilder: (context, index) {
           return Card(
-            child: Text(
-              " Hello!",
-              style: TextStyle(
-                  color: Colors.brown,
-                  fontSize: 20,
-                  fontWeight: FontWeight.normal),
+            child: Column(
+              children: [
+                Text(
+                  "Name",
+                  style: TextStyle(
+                      color: Colors.black,
+                      fontSize: 20,
+                      fontWeight: FontWeight.normal),
+                ),
+              ],
             ),
           );
         },
