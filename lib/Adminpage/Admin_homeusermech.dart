@@ -12,6 +12,7 @@ class Adminusermech extends StatelessWidget {
       child: Scaffold(
         backgroundColor: Colors.blue.shade50,
         appBar: AppBar(
+          automaticallyImplyLeading: false,
           toolbarHeight: 95,
           backgroundColor: Colors.blue.shade50,
           title: CircleAvatar(

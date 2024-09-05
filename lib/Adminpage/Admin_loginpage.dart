@@ -38,15 +38,6 @@ class _AdminloginpageState extends State<Adminloginpage> {
                   ],
                 ),
               ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Text(
-                    "LOGIN",
-                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 30),
-                  )
-                ],
-              ),
               SizedBox(
                 height: 10,
               ),
