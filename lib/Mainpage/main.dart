@@ -20,6 +20,11 @@ import '../Pickers/datepicker1.dart';
 import '../Sharedprefernce/Bio_data2.dart';
 import '../Sharedprefernce/Biodata1.dart';
 import '../Sharedprefernce/Page_1.dart';
+import '../Whatasppproject/Navigationpage.dart';
+import '../Whatasppproject/Whatasppcall.dart';
+import '../Whatasppproject/Whatsapphome.dart';
+import '../Whatasppproject/Whatsappsettings.dart';
+import '../Whatasppproject/Whatsappstatus.dart';
 import '../Widgets/Alertbuttonwidget.dart';
 import '../Widgets/Colurs_widgets.dart';
 import '../Widgets/Drawerwidget.dart';
@@ -71,6 +76,8 @@ import '../Widgets/Cardviewbuilder.dart';
 import '../Widgets/Stackwidgets.dart';
 
 
+
+
 void main() {
   runApp(const MyApp());
 }
@@ -90,7 +97,7 @@ class MyApp extends StatelessWidget {
           colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
           useMaterial3: true,
         ),
-        home:  Biodata_1(),
+        home: Whatsapp_navigation(),
       ),
       designSize: Size(390,844),
     );
