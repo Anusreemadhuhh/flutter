@@ -21,18 +21,18 @@ class _Whatsapp_settingsState extends State<Whatsapp_settings> {
                 return Whatsapp_navigation();
               },));
             },
-            child: Icon(Icons.arrow_back_outlined,color: Colors.white,)),
+            child: Icon(Icons.arrow_back_outlined,color: Colors.black,)),
         title: new Text(
           "Settings",
           style: TextStyle(
-              color: Colors.white, fontSize: 25.0, fontWeight: FontWeight.w600),
+              color: Colors.black, fontSize: 25.0, fontWeight: FontWeight.w600),
         ),
         actions: [
           Padding(
             padding: const EdgeInsets.only(right: 20.0),
             child: Icon(
               CupertinoIcons.search,
-              color: Colors.white,
+              color: Colors.black,
             ),
           ),
         ],

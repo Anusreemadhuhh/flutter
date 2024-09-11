@@ -58,7 +58,7 @@ class _Whatsapp_statusState extends State<Whatsapp_status> {
           ),Padding(
               padding: const EdgeInsets.only(right: 5.0),
               child: PopupMenuButton<String>(
-                  color: Color.fromRGBO(11, 15, 27, 1),
+                  color: Colors.white,
                   icon: Icon(
                     Icons.more_vert,
                     color: Colors.black,
@@ -173,14 +173,7 @@ class _Whatsapp_statusState extends State<Whatsapp_status> {
                   fontWeight: FontWeight.bold,
                 ),
               ),
-              Padding(
-                padding: const EdgeInsets.only(top: 3),
-                child: Icon(
-                  Icons.arrow_forward_ios,
-                  color: Colors.green,
-                  size: 15,
-                ),
-              )
+
             ],
           ),
           SizedBox(

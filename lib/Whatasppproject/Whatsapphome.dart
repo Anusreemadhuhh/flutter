@@ -47,17 +47,17 @@ class _Whatsapp_homeState extends State<Whatsapp_home> {
               onTap: _pickImage,
               child: Icon(
                 Icons.camera_alt_outlined,
-                color: Colors.white,
+                color: Colors.black,
               ),
             ),
           ),
           Padding(
               padding: const EdgeInsets.only(right: 5.0),
               child: PopupMenuButton<String>(
-                  color: Color.fromRGBO(11, 15, 27, 1),
+                  color: Colors.white,
                   icon: Icon(
                     Icons.more_vert,
-                    color: Colors.white,
+                    color: Colors.black,
                   ),
                   itemBuilder: (BuildContext contesxt) {
                     return [
@@ -65,7 +65,7 @@ class _Whatsapp_homeState extends State<Whatsapp_home> {
                         child: Text(
                           "New group",
                           style: TextStyle(
-                              color: Colors.white,
+                              color: Colors.black,
                               fontSize: 16,
                               fontWeight: FontWeight.bold),
                         ),
@@ -75,7 +75,7 @@ class _Whatsapp_homeState extends State<Whatsapp_home> {
                         child: Text(
                           "New broadcast",
                           style: TextStyle(
-                              color: Colors.white,
+                              color: Colors.black,
                               fontSize: 16,
                               fontWeight: FontWeight.bold),
                         ),
@@ -85,7 +85,7 @@ class _Whatsapp_homeState extends State<Whatsapp_home> {
                         child: Text(
                           "Linked device",
                           style: TextStyle(
-                              color: Colors.white,
+                              color: Colors.black,
                               fontSize: 16,
                               fontWeight: FontWeight.bold),
                         ),
@@ -95,7 +95,7 @@ class _Whatsapp_homeState extends State<Whatsapp_home> {
                         child: Text(
                           "Starred messages",
                           style: TextStyle(
-                              color: Colors.white,
+                              color: Colors.black,
                               fontSize: 16,
                               fontWeight: FontWeight.bold),
                         ),
@@ -105,7 +105,7 @@ class _Whatsapp_homeState extends State<Whatsapp_home> {
                         child: Text(
                           "Payments",
                           style: TextStyle(
-                              color: Colors.white,
+                              color: Colors.black,
                               fontSize: 16,
                               fontWeight: FontWeight.bold),
                         ),
@@ -120,7 +120,7 @@ class _Whatsapp_homeState extends State<Whatsapp_home> {
                         child: Text(
                           "Settings",
                           style: TextStyle(
-                              color: Colors.white,
+                              color: Colors.black,
                               fontSize: 16,
                               fontWeight: FontWeight.bold),
                         ),
@@ -142,7 +142,7 @@ class _Whatsapp_homeState extends State<Whatsapp_home> {
                 decoration: InputDecoration(
                     hintText: '  Ask Meta AI or Search',
                     hintStyle:
-                    TextStyle(color: Colors.white),
+                    TextStyle(color: Colors.grey.shade800),
                     prefixIcon: Container(
                       height: 10,
                       width: 10,
@@ -155,7 +155,7 @@ class _Whatsapp_homeState extends State<Whatsapp_home> {
                       ),
                     ),
                     // fillColor: Color.fromARGB(36, 43, 49, 1),
-                    fillColor: Colors.grey.shade900,
+                    fillColor: Colors.grey.shade100,
                     filled: true,
                     border: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(30),
@@ -174,7 +174,7 @@ class _Whatsapp_homeState extends State<Whatsapp_home> {
                   height: 35,
                   width: 50,
                   decoration: BoxDecoration(
-                      color: Colors.grey,
+                      color: Colors.green,
                       borderRadius: BorderRadius.circular(30)),
                   child: Center(
                       child: Text('All',

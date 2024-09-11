@@ -42,31 +42,31 @@ class _Whatsapp_navigationState extends State<Whatsapp_navigation> {
             items: const <BottomNavigationBarItem>[
               BottomNavigationBarItem(
                 icon: Icon(
-                  Icons.chat,
+                  Icons.mark_chat_unread,
                   size: 30,
                 ),
                 label: 'Chats',
-                backgroundColor: Color.fromRGBO(11, 20, 27, 1),),
+                backgroundColor: Colors.white),
               BottomNavigationBarItem(
                 icon: Icon(
-                  Icons.update,
+                  Icons.update_rounded,
                   size: 30,
                 ),
-                label: '  Updates',
-                backgroundColor: Color.fromRGBO(11, 20, 27, 1),),
+                label: 'Updates',
+                backgroundColor: Colors.white,),
               BottomNavigationBarItem(
                 icon: Icon(
-                  CupertinoIcons.person_2_fill,
+                  CupertinoIcons.phone_fill,
                   size: 32,
                 ),
                 label: 'Calls',
-                backgroundColor: Color.fromRGBO(11, 20, 27, 1),),
+                backgroundColor: Colors.white,),
             ],
             type: BottomNavigationBarType.shifting,
             currentIndex: _selectedIndex,
             selectedItemColor: Colors.green,
             showUnselectedLabels: true,
-            unselectedItemColor: Colors.white,
+            unselectedItemColor: Colors.black,
             selectedIconTheme: IconThemeData(color: Colors.green),
             iconSize: 40,
             onTap: _onItemTapped,

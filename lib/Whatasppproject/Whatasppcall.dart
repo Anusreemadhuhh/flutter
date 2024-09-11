@@ -36,7 +36,7 @@ class _Whatsapp_callsState extends State<Whatsapp_calls> {
         title: new Text(
           " Calls",
           style: TextStyle(
-              color: Colors.white, fontSize: 25.0, fontWeight: FontWeight.w600),
+              color: Colors.black, fontSize: 25.0, fontWeight: FontWeight.w600),
         ),
         actions: [
           Padding(
@@ -45,7 +45,7 @@ class _Whatsapp_callsState extends State<Whatsapp_calls> {
               onTap: _pickImage,
               child: Icon(
                 Icons.camera_alt_outlined,
-                color: Colors.white,
+                color: Colors.black,
               ),
             ),
           ),
@@ -53,16 +53,16 @@ class _Whatsapp_callsState extends State<Whatsapp_calls> {
             padding: const EdgeInsets.only(right: 15.0),
             child: Icon(
               CupertinoIcons.search,
-              color: Colors.white,
+              color: Colors.black,
             ),
           ),
           Padding(
               padding: const EdgeInsets.only(right: 5.0),
               child: PopupMenuButton<String>(
-                  color: Color.fromRGBO(11, 15, 27, 1),
+                  color: Colors.white,
                   icon: Icon(
                     Icons.more_vert,
-                    color: Colors.white,
+                    color: Colors.black,
                   ),
                   itemBuilder: (BuildContext contesxt) {
                     return [
@@ -70,7 +70,7 @@ class _Whatsapp_callsState extends State<Whatsapp_calls> {
                         child: Text(
                           "Clear call log",
                           style: TextStyle(
-                              color: Colors.white,
+                              color: Colors.black,
                               fontSize: 16,
                               fontWeight: FontWeight.bold),
                         ),
@@ -85,7 +85,7 @@ class _Whatsapp_callsState extends State<Whatsapp_calls> {
                         child: Text(
                           "Settings",
                           style: TextStyle(
-                              color: Colors.white,
+                              color: Colors.black,
                               fontSize: 16,
                               fontWeight: FontWeight.bold),
                         ),
