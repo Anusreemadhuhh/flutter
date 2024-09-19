@@ -5,7 +5,6 @@ import 'package:image_picker/image_picker.dart';
 
 import 'Whatsappsettings.dart';
 
-
 class Whatsapp_home extends StatefulWidget {
   const Whatsapp_home({super.key});
 
@@ -14,12 +13,11 @@ class Whatsapp_home extends StatefulWidget {
 }
 
 class _Whatsapp_homeState extends State<Whatsapp_home> {
-
   File? _image;
 
   Future<void> _pickImage() async {
     final pickedFile =
-    await ImagePicker().pickImage(source: ImageSource.camera);
+        await ImagePicker().pickImage(source: ImageSource.camera);
 
     if (pickedFile != null) {
       setState(() {
@@ -27,8 +25,6 @@ class _Whatsapp_homeState extends State<Whatsapp_home> {
       });
     }
   }
-
-
 
   @override
   Widget build(BuildContext context) {
@@ -38,7 +34,9 @@ class _Whatsapp_homeState extends State<Whatsapp_home> {
         title: new Text(
           "WhatsApp",
           style: TextStyle(
-              color: Colors.green[800], fontSize: 25.0, fontWeight: FontWeight.w600),
+              color: Colors.green[800],
+              fontSize: 25.0,
+              fontWeight: FontWeight.w600),
         ),
         actions: [
           Padding(
@@ -113,9 +111,11 @@ class _Whatsapp_homeState extends State<Whatsapp_home> {
                       ),
                       PopupMenuItem(
                         onTap: () {
-                          Navigator.push(context, MaterialPageRoute(builder: (context) {
-                            return Whatsapp_settings();
-                          },));
+                          Navigator.push(context, MaterialPageRoute(
+                            builder: (context) {
+                              return Whatsapp_settings();
+                            },
+                          ));
                         },
                         child: Text(
                           "Settings",
@@ -132,131 +132,133 @@ class _Whatsapp_homeState extends State<Whatsapp_home> {
         backgroundColor: Colors.white,
       ),
       backgroundColor: Colors.white,
-      body: Column(
-        children: [
-          Padding(
-            padding: const EdgeInsets.only(left: 20, right: 20, top: 10),
-            child: Container(
-              height: 50,
-              child: TextFormField(
-                decoration: InputDecoration(
-                    hintText: '  Ask Meta AI or Search',
-                    hintStyle:
-                    TextStyle(color: Colors.grey.shade800),
-                    prefixIcon: Container(
-                      height: 10,
-                      width: 10,
-                      child: Padding(
-                        padding: const EdgeInsets.only(left: 15),
-                        child: Image(
-                          image: AssetImage("assets/Meta_ai.png"),
-                          fit: BoxFit.cover,
+      body: Expanded(
+          child: ListView.builder(
+        itemCount: 20,
+        itemBuilder: (context, index) {
+          if (index == 0) {
+            return Column(children: [
+              Padding(
+                padding:
+                    const EdgeInsets.only(left: 20, right: 20, top: 10),
+                child: Container(
+                  height: 50,
+                  child: TextFormField(
+                    decoration: InputDecoration(
+                        hintText: '  Ask Meta AI or Search',
+                        hintStyle: TextStyle(color: Colors.grey.shade800),
+                        prefixIcon: Container(
+                          height: 10,
+                          width: 10,
+                          child: Padding(
+                            padding: const EdgeInsets.only(left: 15),
+                            child: Image(
+                              image: AssetImage("assets/Meta_ai.png"),
+                              fit: BoxFit.cover,
+                            ),
+                          ),
                         ),
-                      ),
-                    ),
-                    // fillColor: Color.fromARGB(36, 43, 49, 1),
-                    fillColor: Colors.grey.shade100,
-                    filled: true,
-                    border: OutlineInputBorder(
-                        borderRadius: BorderRadius.circular(30),
-                        borderSide: BorderSide.none)),
+                        // fillColor: Color.fromARGB(36, 43, 49, 1),
+                        fillColor: Colors.grey.shade100,
+                        filled: true,
+                        border: OutlineInputBorder(
+                            borderRadius: BorderRadius.circular(30),
+                            borderSide: BorderSide.none)),
+                  ),
+                ),
               ),
-            ),
-          ),
-          Padding(
-            padding: const EdgeInsets.only(left: 15, right: 10, top: 20),
-            child: Row(
-              children: [
-                SizedBox(
-                  width: 10,
-                ),
-                Container(
-                  height: 35,
-                  width: 50,
-                  decoration: BoxDecoration(
-                      color: Colors.green,
-                      borderRadius: BorderRadius.circular(30)),
-                  child: Center(
-                      child: Text('All',
-                          style: TextStyle(color: Colors.green.shade50))),
-                ),
-                SizedBox(
-                  width: 10,
-                ),
-                Container(
-                  height: 35,
-                  width: 70,
-                  decoration: BoxDecoration(
-                      color: Colors.grey,
-                      borderRadius: BorderRadius.circular(30)),
-                  child: Center(
-                      child: Text(
+              Padding(
+                padding:
+                    const EdgeInsets.only(left: 15, right: 10, top: 20),
+                child: Row(
+                  children: [
+                    SizedBox(
+                      width: 10,
+                    ),
+                    Container(
+                      height: 35,
+                      width: 50,
+                      decoration: BoxDecoration(
+                          color: Colors.green,
+                          borderRadius: BorderRadius.circular(30)),
+                      child: Center(
+                          child: Text('All',
+                              style:
+                                  TextStyle(color: Colors.green.shade50))),
+                    ),
+                    SizedBox(
+                      width: 10,
+                    ),
+                    Container(
+                      height: 35,
+                      width: 70,
+                      decoration: BoxDecoration(
+                          color: Colors.grey,
+                          borderRadius: BorderRadius.circular(30)),
+                      child: Center(
+                          child: Text(
                         'Unread',
                         style: TextStyle(color: Colors.grey.shade200),
                       )),
-                ),
-                SizedBox(
-                  width: 10,
-                ),
-                Container(
-                  height: 35,
-                  width: 90,
-                  decoration: BoxDecoration(
-                      color: Colors.grey,
-                      borderRadius: BorderRadius.circular(30)),
-                  child: Center(
-                      child: Text(
+                    ),
+                    SizedBox(
+                      width: 10,
+                    ),
+                    Container(
+                      height: 35,
+                      width: 90,
+                      decoration: BoxDecoration(
+                          color: Colors.grey,
+                          borderRadius: BorderRadius.circular(30)),
+                      child: Center(
+                          child: Text(
                         'Favourites',
                         style: TextStyle(color: Colors.grey.shade200),
                       )),
-                ),
-                SizedBox(
-                  width: 10,
-                ),
-                Container(
-                  height: 35,
-                  width: 70,
-                  decoration: BoxDecoration(
-                      color: Colors.grey,
-                      borderRadius: BorderRadius.circular(30)),
-                  child: Center(
-                      child: Text(
+                    ),
+                    SizedBox(
+                      width: 10,
+                    ),
+                    Container(
+                      height: 35,
+                      width: 70,
+                      decoration: BoxDecoration(
+                          color: Colors.grey,
+                          borderRadius: BorderRadius.circular(30)),
+                      child: Center(
+                          child: Text(
                         'Groups',
                         style: TextStyle(color: Colors.grey.shade200),
                       )),
-                ),
-              ],
-            ),
-          ),
-          SizedBox(
-            height: 10,
-          ),
-          Expanded(
-              child: ListView.builder(
-                itemCount: 20,
-                itemBuilder: (context, index) {
-                  return Padding(
-                    padding: const EdgeInsets.only(left: 10, top: 0, right: 10),
-                    child: ListTile(
-                      title: Text(
-                        "Name",
-                        style: TextStyle(
-                            color: Colors.black, fontWeight: FontWeight.bold),
-                      ),
-                      subtitle: Text(
-                        "Last Message",
-                        style: TextStyle(color: Colors.grey),
-                      ),
-                      leading: CircleAvatar(
-                        backgroundImage: AssetImage("assets/elena.jpeg"),
-                        radius: 30,
-                      ),
                     ),
-                  );
-                },
-              ))
-        ],
-      ),
+                  ],
+                ),
+              ),
+              SizedBox(
+                height: 10,
+              ),
+            ]);
+          }
+          return Padding(
+            padding: const EdgeInsets.only(left: 10, top: 0, right: 10),
+            child: ListTile(
+              title: Text(
+                "Name",
+                style: TextStyle(
+                    color: Colors.black, fontWeight: FontWeight.bold),
+              ),
+              subtitle: Text(
+                "Last Message",
+                style: TextStyle(color: Colors.grey),
+              ),
+              leading: CircleAvatar(
+                backgroundImage: AssetImage("assets/elena.jpeg"),
+                radius: 30,
+              ),
+            ),
+          );
+        },
+      )),
     );
   }
 }

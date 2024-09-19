@@ -20,6 +20,8 @@ import '../Pickers/datepicker1.dart';
 import '../Sharedprefernce/Bio_data2.dart';
 import '../Sharedprefernce/Biodata1.dart';
 import '../Sharedprefernce/Page_1.dart';
+import '../Uis/Newuifruits.dart';
+import '../Uis/Newuifruits1.dart';
 import '../Whatasppproject/Navigationpage.dart';
 import '../Whatasppproject/Whatasppcall.dart';
 import '../Whatasppproject/Whatsapphome.dart';
@@ -98,7 +100,7 @@ class MyApp extends StatelessWidget {
           colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
           useMaterial3: true,
         ),
-        home: Whatsapp_navigation(),
+        home: Fruit_tabbar(),
       ),
       designSize: Size(390,844),
     );
